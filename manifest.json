@@ -1,0 +1,26 @@
+{
+  "id": "com.community.shokoanime",
+  "version": "1.0.0",
+  "name": "Shoko Anime Metadata",
+  "description": "Anime catalogs and metadata bridge for Shoko Server",
+  "icon": "https://shokoanime.com/images/common/shoko-icon.svg",
+  "logo": "https://shokoanime.com/images/common/shoko-icon.svg",
+  "background": "https://shokoanime.com/images/common/shoko-bg.jpg",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["series", "anime"],
+  "catalogs": [
+    {
+      "type": "series",
+      "id": "shoko-anime",
+      "name": "Shoko Anime Library",
+      "extra": [
+        {"name": "search", "isRequired": false}
+      ]
+    }
+  ],
+  "idPrefixes": ["shoko:"],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": true
+  }
+}
